@@ -1,0 +1,49 @@
+# This is a basic workflow to help you get started with Actions
+
+name: multi-os-test
+
+
+on: push
+
+         
+jobs:
+  ubuntu-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Show Ubuntu Information
+        run: |
+          echo "Testing on Ubuntu..."
+          systeminfo
+
+      - name: Create File
+        run: |
+          echo "Ubuntu Test by " uname-a > test-ubuntu.txt
+          cat test-ubuntu.txt
+
+          echo"Ubuntu Tests Completed"
+
+      # -name: Print Result
+      # run: |
+      #   echo "Ubuntu tests completed"
+
+  windows-job:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Show Windows Information
+        run: |
+          echo "Testing on Windows..."
+          systeminfo
+
+      - name: Create File
+        run: |
+          echo "Ubuntu Test by" uname -a > test-windows.txt
+          cat test-windows.txt
+
+          echo "Windows Tests Completed"
+         
