@@ -23,7 +23,9 @@ jobs:
           echo "Ubuntu Test by Haspinder Dhillon" > test-ubuntu.txt
           cat test-ubuntu.txt
 
-          echo"Ubuntu Tests Completed"
+          -name: Print Result
+          run: echo "Ubuntu Tests Completed"
+
 
       # -name: Print Result
       # run: |
