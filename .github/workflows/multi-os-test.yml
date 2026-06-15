@@ -16,7 +16,8 @@ jobs:
       - name: Show Ubuntu Information
         run: |
           echo "Testing on Ubuntu..."
-          systeminfo
+
+         
 
           # - name: Show Ubuntu Information
           #        run: |
