@@ -15,14 +15,8 @@ jobs:
 
       - name: Show Ubuntu Information
         run: |
-          echo "Testing on Ubuntu..."
-
-         
-
-          # - name: Show Ubuntu Information
-          #        run: |
-          # echo "Testing on Ubuntu..."
-          # systeminfo
+          echo "Tesing on Ubuntu..."
+          uname -a
 
       - name: Create File
         run: |
@@ -48,7 +42,7 @@ jobs:
 
       - name: Create File
         run: |
-          echo "Ubuntu Test by Haspinder Dhillon"> test-windows.txt
+          echo "Windows Test by Haspinder Dhillon"> test-windows.txt
           cat test-windows.txt
 
           echo "Windows Tests Completed"
